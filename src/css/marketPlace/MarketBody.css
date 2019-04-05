@@ -1,0 +1,21 @@
+body {
+  background-color: #F5F7F7 !important;
+}
+.marketBody {
+  width: 100%;
+  margin: 0;
+  overflow: hidden !important;
+}
+.marketBody .loaderDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.marketBody .loaderDiv img {
+  width: 80px;
+  height: 80px;
+}
+.marketBody .marketBodyContent {
+
+}

@@ -1,0 +1,181 @@
+.register {
+  width: 100%;
+  margin: 0;
+}
+.register .registerContent {
+  padding: 70px 0;
+}
+.register .registerContent .goToLoginCard {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 15px;
+  border: 1px solid #ecf0f1;
+  margin-bottom: 10px;
+  height: 100%;
+}
+.register .registerContent .goToLoginCard h3 {
+  font-family: 'Rubik-Medium';
+  font-size: 14px;
+  color: #1C113D;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.register .registerContent .goToLoginCard button {
+  background: #57D284;
+  font-family: 'Rubik-Medium';
+  color: #fff;
+  width: 80%;
+  padding: 10px 0;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.register .registerContent .registerForm {
+  background-color: #fff;
+  padding: 50px 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ecf0f1;
+}
+.register .registerContent .registerForm .registerAlert {
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+  margin: 0 30px;
+}
+@media(max-width: 476px){
+  .register .registerContent .registerForm label{
+    margin: 10px 20px;
+    font-size: 23px !important;
+  }
+}
+@media(max-width: 418px){
+  .register .registerContent .registerForm {
+    padding: 50px 0 !important;
+  }
+  .register .registerContent .registerForm label{
+    font-size: 20px !important;
+  }
+}
+.register .registerContent .registerForm label{
+  font-family: 'Rubik-Regular';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.register .registerContent .registerForm .formInputs {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+.register .registerContent .registerForm .formInputs input{
+  font-family: 'Rubik-Regular';
+  margin: 12px 0;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #C9C9C9;
+}
+.register .registerContent .registerForm .robotAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.register .registerContent .registerForm .terms {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.register .registerContent .registerForm .terms h6{
+  text-align: center;
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #1C113D;
+  line-height: 20px;
+}
+.register .registerContent .registerForm .terms p{
+  font-family: 'Rubik-Regular';
+  font-size: 11px;
+  color: #9B9B9B;
+  line-height: 16px;
+}
+.register .registerContent .registerForm .submitButton {
+  text-align: center;
+}
+.register .registerContent .registerForm .submitButton button {
+  background: #57D284;
+  font-family: 'Rubik-Medium';
+  color: #fff;
+  width: 250px;
+  padding: 8px 0;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.register .registerContent .registerForm .submitButton button:hover,
+.register .registerContent .goToLoginCard button:hover {
+  background-color: #27ae60;
+}
+
+.register .registerContent .registerForm .submitButton button:after {
+  background: rgba(255, 255, 255, .5);
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  position: absolute;
+  border-radius: 100%;
+  content: '';
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.register .registerContent .registerForm .submitButton button:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 767px){
+  .register .registerContent .registerForm {
+    margin-left: 0;
+  }
+  .register .registerContent .registerForm .submitButton button {
+    width: 88%;
+  }
+  .register .registerContent .registerForm h2{
+    text-align: center;
+  }
+  .register .registerContent .registerForm .terms {
+    width: 90%;
+  }
+}

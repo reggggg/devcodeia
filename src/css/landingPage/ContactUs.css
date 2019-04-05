@@ -1,0 +1,148 @@
+.contactUs {
+  width: 100%;
+  margin: 0;
+}
+.contactUs .contactUsContent {
+  padding: 80px;
+}
+.contactUs .contactUsContent .titleBar {
+  text-align: center;
+}
+.contactUs .contactUsContent .titleBar span {
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #4DC378;
+}
+.contactUs .contactUsContent .titleBar h2 {
+  font-family: 'Rubik-Bold';
+  font-size: 24px;
+  color: #1C113D;
+  margin: 8px 0;
+}
+.contactUs .contactUsContent .contactBody {
+
+}
+.contactUs .contactUsContent .contactBody .left {
+  margin: 30px 0;
+  padding: 0 30px;
+}
+.contactUs .contactUsContent .contactBody .left .eachInfo {
+  margin: 35px 0;
+}
+.contactUs .contactUsContent .contactBody .left .eachInfo span {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.contactUs .contactUsContent .contactBody .left .eachInfo span img {
+  margin-right: 20px;
+}
+.contactUs .contactUsContent .contactBody .left .eachInfo span h3 {
+  margin: 0;
+  font-family: 'Rubik-Bold';
+  font-size: 18px;
+  color: #1C113D;
+}
+.contactUs .contactUsContent .contactBody .left .eachInfo p {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #1C113D;
+  text-align: justify;
+  line-height: 20px;
+  padding-left: 47px;
+}
+
+.contactUs .contactUsContent .contactBody .right {
+  margin-top: 55px;
+}
+.contactUs .contactUsContent .contactBody .right .forms {
+
+}
+.contactUs .contactUsContent .contactBody .right .forms input {
+  width: 100%;
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #9B9B9B;
+  padding: 8px 15px;
+  padding-left: 30px;
+  border: 1px solid #BABABA;
+  outline: none;
+  margin: 10px 0;
+}
+.contactUs .contactUsContent .contactBody .right .forms input::placeholder {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #9B9B9B;
+}
+.contactUs .contactUsContent .contactBody .right .forms input.formName{
+    background: url('../../images/icon-name.svg') no-repeat scroll 10px 10px;
+}
+.contactUs .contactUsContent .contactBody .right .forms input.formEmail{
+    background: url('../../images/icon-mail.svg') no-repeat scroll 8px 13px;
+}
+.contactUs .contactUsContent .contactBody .right .forms input.formMobile{
+    background: url('../../images/icon-mobile.svg') no-repeat scroll 10px 9px;
+}
+.contactUs .contactUsContent .contactBody .right .forms input.formSubject{
+    background: url('../../images/icon-subject.svg') no-repeat scroll 10px 10px;
+}
+
+.contactUs .contactUsContent .contactBody .right .forms textarea {
+  width: 100%;
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #9B9B9B;
+  padding: 8px 15px;
+  padding-left: 30px;
+  border: 1px solid #BABABA;
+  outline: none;
+  margin: 10px 0;
+  resize: none;
+  background: url('../../images/icon-message.svg') no-repeat scroll 10px 10px;
+}
+.contactUs .contactUsContent .contactBody .right .forms textarea::placeholder {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #9B9B9B;
+}
+.contactUs .contactUsContent .contactBody .right .forms button.submitMessage {
+  background: #57D284;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Rubik-Medium';
+  font-size: 18px;
+  padding: 6px 40px;
+  margin: 14px 0;
+  border-radius: 1px;
+}
+.contactUs .contactUsContent .contactBody .right .forms .formsAlert {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  border-radius: 1px;
+  margin: 5px 0;
+}
+.contactUs .contactUsContent .contactBody .right .forms .formsAlert button.close {
+  box-shadow: none !important;
+  outline: none !important;
+}
+@media(max-width: 991px){
+  .contactUs .contactUsContent {
+    padding: 50px 20px;
+  }
+  .contactUs .contactUsContent .contactBody .right .forms button.submitMessage{
+    width: 100%;
+  }
+}
+@media(max-width: 767px){
+  .contactUs .contactUsContent .contactBody .right .forms button.submitMessage  {
+    width: 100%;
+  }
+}
+@media(max-width: 449px){
+  .contactUs .contactUsContent {
+    padding: 50px 20px;
+  }
+}
+@medi

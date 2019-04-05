@@ -1,0 +1,56 @@
+.services {
+  width: 100%;
+  margin: 0;
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FAFBFA 100%);
+}
+.services .servicesContent {
+  padding: 50px 0;
+}
+.services .servicesContent .titleBar {
+
+}
+.services .servicesContent .titleBar span {
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #4DC378;
+}
+.services .servicesContent .titleBar h2 {
+  font-family: 'Rubik-Bold';
+  font-size: 24px;
+  color: #1C113D;
+  margin: 5px 0;
+}
+.services .servicesContent .servicesBody {
+  margin: 50px 0;
+
+}
+.services .servicesContent .servicesBody .servicesFrame{
+  text-align: center;
+  box-shadow: 2px 2px 10px 10px rgba(0,0,0,0.02);
+  background-color: #fff;
+  padding: 75px 0;
+  max-width: 31%;
+  margin: 15px auto;
+}
+@media(max-width: 767px){
+  .services .servicesContent .servicesBody .servicesFrame{
+    max-width: 100%;
+  }
+}
+.services .servicesContent .servicesBody .servicesFrame img{
+
+}
+.services .servicesContent .servicesBody .servicesFrame h3{
+  font-family: 'Rubik-Medium';
+  font-size: 14px;
+  color: #4DC378;
+  margin: 50px 0 20px;
+}
+.services .servicesContent .servicesBody .servicesFrame p{
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  color: #1C113D;
+  line-height: 18px;
+  width: 75%;
+  margin: 0 auto;
+}

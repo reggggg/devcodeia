@@ -1,0 +1,114 @@
+.about {
+  width: 100%;
+  margin: 0;
+}
+.about .aboutContent {
+  padding: 0;
+  display: flex;
+}
+/* fistcol */
+.about .aboutContent .firstCol {
+  text-align: center;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+@media(max-width: 991px){
+  .about .aboutContent .firstCol {
+    padding: 25px 20px;
+  }
+  .about .aboutContent .thirdCol  {
+    padding: 25px 20px !important;
+  }
+}
+@media(max-width: 390px){
+  .about .aboutContent .firstCol button,
+   .about .aboutContent .thirdCol button {
+    width: 100%;
+  }
+}
+.about .aboutContent .firstCol span {
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #4DC378;
+}
+.about .aboutContent .firstCol h3 {
+  font-family: 'Rubik-Bold';
+  font-size: 24px;
+  color: #1C113D;
+}
+.about .aboutContent .firstCol p {
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  color: #1C113D;
+  margin: 25px 0;
+  text-align: justify;
+  -moz-text-align-last: center;
+    text-align-last: center;
+}
+.about .aboutContent .firstCol button {
+  font-family: 'Rubik-Medium';
+  color: #fff;
+  border: none;
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  background: #57D284;
+  padding: 8px 15px;
+  margin-top: 35px;
+}
+/* fistcol */
+
+/* secondcol */
+.about .aboutContent .secondCol {
+  background: url('../../images/img-About.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* secondcol */
+
+/* thirdcol */
+.about .aboutContent .thirdCol {
+  text-align: center;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+.about .aboutContent .thirdCol span {
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #4DC378;
+}
+.about .aboutContent .thirdCol h3 {
+  font-family: 'Rubik-Bold';
+  font-size: 24px;
+  color: #1C113D;
+}
+.about .aboutContent .thirdCol p {
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  color: #1C113D;
+  margin: 25px 0;
+  text-align: justify;
+  -moz-text-align-last: center;
+    text-align-last: center;
+}
+.about .aboutContent .thirdCol button {
+  font-family: 'Rubik-Medium';
+  color: #fff;
+  border: none;
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  background: #1C113D;
+  padding: 8px 15px;
+  margin-top: 35px;
+}
+/* thirdcol */

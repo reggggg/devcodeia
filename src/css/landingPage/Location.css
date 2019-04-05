@@ -1,0 +1,16 @@
+.location {
+  width: 100%;
+  margin: 0;
+}
+.location .locationContent {
+  padding-top: 30px;
+  line-height: 0.8;
+}
+.location .locationContent .map {
+  margin: 0;
+  padding: 0;
+}
+.location .locationContent .marker {
+  margin: 0;
+  padding: 0;
+}

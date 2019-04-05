@@ -1,0 +1,66 @@
+.banner {
+  width: 100%;
+  margin: 0;
+  margin-top: 130px;
+  background: url('../../images/market/bg-BannerCodeia Market.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.banner .bannerContent {
+  padding: 60px 0;
+}
+
+@media(max-width: 686px){
+  .banner {
+    margin-top: 150px;
+  }
+}
+@media(max-width: 575px){
+  .banner .bannerContent {
+    text-align: center;
+  }
+}
+@media(max-width: 390px){
+  .banner .bannerContent {
+    padding-top: 100px;
+  }
+}
+@media(max-width: 271px){
+  .banner .bannerContent {
+    padding-top: 150px;
+  }
+}
+.banner .bannerContent h1{
+  font-family: 'Rubik-Bold';
+  font-size: 40px;
+  color: #fff;
+  animation: fade-in-left-h1 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes fade-in-left-h1 {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.banner .bannerContent h2{
+  font-family: 'Rubik-Light';
+  font-size: 30px;
+  color: #fff;
+  animation: fade-in-left-h2 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes fade-in-left-h2 {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

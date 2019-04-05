@@ -1,0 +1,347 @@
+.userSettings {
+  width: 100%;
+  margin: 50px 0;
+}
+.userSettings .userSettingsContent {
+
+}
+/* PAYMENT MODAL */
+.userSettings .userSettingsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+.userSettings .userSettingsModal.hidden {
+  display: none;
+}
+.userSettings .alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.userSettings .alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.userSettings .alert-exit {
+  opacity: 1;
+}
+.userSettings .alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+.userSettings .userSettingsModal .userSettingsModalBody {
+  position: fixed;
+  background: Transparent;
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 35px 30px 18px 30px;
+  border: 1px solid #353b48;
+  background: rgba(0, 0, 0, 0.9);
+}
+.userSettings .userSettingsModal .userSettingsModalBody h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 19px;
+}
+.userSettings .userSettingsModal .userSettingsModalBody .tickButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0;
+}
+.userSettings .userSettingsModal .userSettingsModalBody .tickButtons button {
+  width: 160px;
+  height: 40px;
+  margin: 0 8px;
+  background-color: Transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.userSettings .userSettingsModal .userSettingsModalBody .tickButtons button.yes {
+  border: 2px solid #27ae60;
+  color: #27ae60;
+  font-family: 'Rubik-Medium';
+}
+.userSettings .userSettingsModal .userSettingsModalBody .tickButtons button.yes:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+.userSettings .userSettingsModal .userSettingsModalBody .tickButtons button.cancel {
+  border: 2px solid #c0392b;
+  color: #c0392b;
+  font-family: 'Rubik-Medium';
+}
+.userSettings .userSettingsModal .userSettingsModalBody .tickButtons button.cancel:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+/* END OF CONFIRMATION MODAL */
+
+.userSettings .userSettingsContent .userSettingsBody {
+
+}
+.userSettings .userSettingsContent .userSettingsBody .profileImage {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #ecf0f1;
+  padding: 0;
+  height: 100%;
+}
+.userSettings .userSettingsContent .userSettingsBody .profileImage .titleBar {
+  border-bottom: 1px solid #ecf0f1;
+}
+.userSettings .userSettingsContent .userSettingsBody .profileImage .titleBar h6 {
+  font-family: 'Rubik-Medium';
+  font-size: 14px;
+  color: #1C113D;
+  margin: 0;
+  padding: 14px 0;
+}
+.userSettings .userSettingsContent .userSettingsBody .profileImage .changeImage {
+  padding: 20px 65px;
+}
+@media(max-width: 991px){
+  .userSettings .userSettingsContent .userSettingsBody .profileImage .changeImage {
+    padding: 20px 30px;
+  }
+}
+.userSettings .userSettingsContent .userSettingsBody .profileImage .changeImage img {
+  width: 100%;
+  height: 100%;
+}
+@media(max-width: 767px){
+  .userSettings .userSettingsContent .userSettingsBody .profileImage .changeImage img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media(max-width: 575px) {
+  .userSettings .userSettingsContent .userSettingsBody .profileImage {
+    margin: 0 5px;
+  }
+}
+@media(max-width: 315px) {
+  .userSettings .userSettingsContent .userSettingsBody .profileImage .changeImage img {
+    width: 100%;
+  }
+}
+.userSettings .userSettingsContent .userSettingsBody .profileImage .changeImage label {
+  font-family: 'Rubik-Regular';
+  font-size: 10px;
+  color: #57D284;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm {
+
+}
+@media(max-width: 767px) {
+  .userSettings .userSettingsContent .userSettingsBody .rightForm {
+    padding: 0;
+    margin-top: 12px;
+  }
+}
+@media(max-width: 575px){
+  .userSettings .userSettingsContent .userSettingsBody .rightForm {
+    padding: 0 5px;
+  }
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword {
+  background-color: #fff;
+  border: 1px solid #ecf0f1;
+  padding: 20px 30px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword label {
+  font-family: 'Rubik-Light';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword .inputs {
+  margin: 20px 0;
+  padding: 0 30px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword .inputs input {
+  font-family: 'Rubik-Light';
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  padding: 0 15px;
+  margin: 8px 0;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword .inputs .changePassSubmit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword .inputs .changePassSubmit button {
+  font-family: 'Rubik-Medium';
+  padding: 7px 18px;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  background-color: #57D284;
+  cursor: pointer;
+  outline: none;
+}
+@media(max-width: 400px){
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword .inputs .changePassSubmit button {
+    width: 100%;
+  }
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo {
+  background-color: #fff;
+  border: 1px solid #ecf0f1;
+  margin-top: 13px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .nameAndEmail {
+  padding: 20px 30px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .nameAndEmail label {
+  font-family: 'Rubik-Light';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .nameAndEmail .inputs {
+  margin: 20px 0 0 0;
+  padding: 0 30px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .nameAndEmail .inputs h6 {
+  margin: 0;
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #1C113D;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .nameAndEmail .inputs input {
+  font-family: 'Rubik-Light';
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  padding: 0 15px;
+  margin: 8px 0 22px 0;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .countryAndState {
+  padding: 20px 30px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .countryAndState label {
+  font-family: 'Rubik-Light';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .countryAndState .selects {
+  padding: 20px 30px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .countryAndState .selects .accountInputSelect {
+  font-family: 'Rubik-Light';
+  font-size: 15px;
+  margin: 5px 0;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .countryAndState .selects .accountInputSelect div {
+  border-radius: 0 !important;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe {
+  padding: 20px 30px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe label {
+  font-family: 'Rubik-Light';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .inputs {
+  margin: 20px 0 23px 0;
+  padding: 0 12px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .inputs input {
+  font-family: 'Rubik-Light';
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  padding: 0 15px;
+  margin: 5px 0;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .aboutEditor {
+  margin: 5px 26px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .aboutEditor h6 {
+  font-family: 'Rubik-Light';
+  font-size: 14px;
+  color: #1C113D;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .aboutEditor textarea {
+  outline: none;
+  font-family: 'Rubik-Light';
+  font-size: 14px;
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  resize: none;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .aboutEditor .submitUpdateInfo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .aboutEditor .submitUpdateInfo button {
+  font-family: 'Rubik-Medium';
+  padding: 7px 18px;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  background-color: #57D284;
+  cursor: pointer;
+  outline: none;
+}
+@media(max-width: 400px){
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .aboutEditor .submitUpdateInfo button {
+    width: 100%;
+  }
+}
+@media(max-width: 480px){
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword,
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .nameAndEmail,
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .countryAndState,
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe {
+    padding: 20px 12px;
+  }
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .changePassword .inputs,
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .nameAndEmail .inputs {
+    padding: 0 5px;
+  }
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .countryAndState .selects {
+    padding: 10px 5px;
+  }
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .inputs {
+    padding: 0 5px;
+  }
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .col-md-6 {
+    padding: 0;
+  }
+  .userSettings .userSettingsContent .userSettingsBody .rightForm .accountInfo .aboutMe .aboutEditor {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,157 @@
+.marketPortal {
+  width: 100%;
+  background: #F7F7F7;
+  margin: 0;
+}
+.marketPortal .marketPortalContent {
+  padding: 60px 0;
+}
+.marketPortal .marketPortalContent .titleBar {
+  text-align: center;
+}
+.marketPortal .marketPortalContent .titleBar h6 {
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #4DC378;
+}
+.marketPortal .marketPortalContent .titleBar h4 {
+  font-family: 'Rubik-Bold';
+  font-size: 24px;
+  color: #1C113D;
+}
+.marketPortal .marketPortalContent .flexBetween {
+  margin: 30px 0;
+}
+.marketPortal .marketPortalContent .flexBetween .middle {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketPortal .marketPortalContent .flexBetween .middle .vr {
+  height: 80%;
+  width: 1px;
+  background-color: #E0E0E0;
+}
+.marketPortal .marketPortalContent .flexBetween .left {
+  padding-left: 0;
+  padding-right: 0;
+}
+.marketPortal .marketPortalContent .flexBetween .left h2 {
+  font-family: 'Rubik-Medium';
+  font-size: 24px;
+  color: #1C113D;
+  margin-top: 30px;
+}
+.marketPortal .marketPortalContent .flexBetween .left p {
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  color: #1C113D;
+  text-align: justify;
+  line-height: 18px;
+}
+.marketPortal .marketPortalContent .flexBetween .left div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+}
+.marketPortal .marketPortalContent .flexBetween .left div  button {
+  font-family: 'Rubik-Bold';
+  font-size: 14px;
+  padding: 10px 20px;
+  background: #57D284;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.marketPortal .marketPortalContent .flexBetween .left .imgContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 289px;
+  width: 100%;
+  background: url('../../images/img-MarketPlace.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 15px 0;
+}
+.marketPortal .marketPortalContent .flexBetween .left .imgContainer label {
+  font-family: Rubik-Bold;
+  font-size: 26px;
+  color: #fff;
+}
+.marketPortal .marketPortalContent .flexBetween .right {
+  padding-left: 0;
+  padding-right: 0;
+}
+.marketPortal .marketPortalContent .flexBetween .right h2 {
+  font-family: 'Rubik-Medium';
+  font-size: 24px;
+  color: #1C113D;
+  margin-top: 30px;
+}
+.marketPortal .marketPortalContent .flexBetween .right p {
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  color: #1C113D;
+  text-align: justify;
+  line-height: 18px;
+}
+.marketPortal .marketPortalContent .flexBetween .right div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+}
+.marketPortal .marketPortalContent .flexBetween .right div  button {
+  font-family: 'Rubik-Bold';
+  font-size: 14px;
+  padding: 10px 20px;
+  background: #57D284;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.marketPortal .marketPortalContent .flexBetween .right .imgContainer  {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 289px;
+  width: 100%;
+  background: url('../../images/img-MarketPlace.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 15px 0;
+}
+.marketPortal .marketPortalContent .flexBetween .right .imgContainer label {
+  font-family: Rubik-Bold;
+  font-size: 26px;
+  color: #fff;
+}
+@media(max-width: 320px){
+  .marketPortal .marketPortalContent .flexBetween .left div  button,
+  .marketPortal .marketPortalContent .flexBetween .right div  button {
+    width: 100%;
+  }
+}
+@media(max-width: 767px){
+  .marketPortal .marketPortalContent .flexBetween .left,
+  .marketPortal .marketPortalContent .flexBetween .right {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .marketPortal .marketPortalContent .flexBetween .left,
+  .marketPortal .marketPortalContent .flexBetween .right{
+    border: 1px solid #ecf0f1;
+    margin: 10px 0;
+  }
+}

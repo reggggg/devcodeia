@@ -1,0 +1,42 @@
+button {
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6, b, label, strong {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+}
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,295 @@
+.marketHeader {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: #1F231F !important;
+}
+.marketHeader .headerNav {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.marketHeader .headerNav .navbar-brand {
+  margin-top: 25px;
+}
+.marketHeader .headerNav .navbar-brand img {
+  width: 93px;
+}
+.marketHeader .linksBody {
+
+}
+
+
+.marketHeader .linksBody .headerDisplayBody {
+  display: flex;
+  align-items: center;
+}
+.marketHeader .linksBody .headerDisplayBody .headerOurServices {
+  color: #fff;
+  background-color: #343434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 14px;
+}
+.marketHeader .linksBody .headerDisplayBody .headerOurServices h6 {
+  margin: 0;
+  font-family: 'Rubik-Light';
+  font-size: 13px;
+  cursor: pointer;
+}
+.marketHeader .linksBody .headerDisplayBody .headerOurServices h6:hover {
+  color: #57D284;
+}
+@media(max-width: 767px){
+  .marketHeader .container {
+    max-width: 100%;
+  }
+  .marketHeader .headerNav .navbar-brand {
+    margin-top: 10px;
+  }
+  .marketHeader .linksBody .headerDisplayBody .headerOurServices h6,
+  .marketHeader .linksBody .loggedInHeader span .headerOurServices h6,
+  .marketHeader .linksBody .headerLoginRegister h6 {
+    font-size: 24px !important;
+  }
+  .marketHeader .headerNav .headerDisplayBody,
+  .marketHeader .headerNav .loggedInHeader {
+    height: 100%;
+    padding: 12px 0 30px 0;
+  }
+}
+.marketHeader .linksBody .headerLoginRegister {
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+  margin: 5px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #343434;
+  height: 40px;
+  padding: 0 14px;
+}
+.marketHeader .linksBody .headerLoginRegister h6 {
+  margin: 0;
+  font-family: 'Rubik-Light';
+  font-size: 13px;
+  cursor: pointer;
+}
+.marketHeader .linksBody .headerLoginRegister h6:hover {
+  color: #57D284;
+}
+.marketHeader .linksBody .headerLoginRegister h6.slash {
+  cursor: default;
+}
+.marketHeader .linksBody .headerLoginRegister h6.slash:hover {
+  cursor: default;
+  color: #fff;
+}
+.marketHeader .navbar-toggler {
+  background: url('../images/market/menu.svg');
+  background-color: #ecf0f1 !important;
+  background-position: center center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  outline: none !important;
+  transition: 0.5s;
+}
+.marketHeader .mobileViewActive {
+  transition: 0.5s;
+  background-color: #7f8c8d !important;
+}
+
+.marketHeader .linksBody .loggedInHeader {
+
+}
+.headerNav .marketHeaderCollapse {
+  position: relative;
+  top: -24px;
+}
+.marketHeader .linksBody .loggedInHeader span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketHeader .linksBody .loggedInHeader span .headerOurServices {
+  color: #fff;
+  background-color: #343434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 14px;
+  margin: 0 2px;
+  border-radius: 0;
+}
+.marketHeader .linksBody .loggedInHeader span .headerOurServices h6 {
+  margin: 0;
+  font-family: 'Rubik-Light';
+  font-size: 13px;
+  cursor: pointer;
+}
+.marketHeader .linksBody .loggedInHeader span .headerOurServices h6:hover {
+  color: #57D284;
+}
+@media(max-width: 767px){
+  .marketHeader .linksBody .loggedInHeader span {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column !important;
+  }
+  .marketHeader .linksBody .loggedInHeader span .profileDropdown {
+    margin-left: -10px;
+  }
+  .marketHeader .linksBody .headerDisplayBody {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .headerNav .marketHeaderCollapse {
+    position: relative;
+    top: 10px;
+  }
+  .marketHeader .linksBody .headerDisplayBody .headerOurServices {
+    background-color: Transparent;
+  }
+  .marketHeader .linksBody .headerLoginRegister {
+    background-color: Transparent;
+  }
+  .marketHeader .linksBody .loggedInHeader span .headerOurServices {
+    background-color: Transparent;
+  }
+
+}
+.marketHeader .linksBody .loggedInHeader span .profileDropdown button.profileDropdownButton {
+  background-color: #343434;
+  height: 40px;
+  border: none;
+  box-shadow: none !important;
+  margin: 0;
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+  color: #b2bec3;
+  margin: 0 2px;
+  border-radius: 0;
+}
+
+.marketHeader .linksBody .loggedInHeader span .profileDropdown button.profileDropdownButton img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.marketHeader .linksBody .loggedInHeader span .profileDropdown button.dropdown-item {
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+  color: #000;
+  border-radius: 0;
+  outline: none;
+}
+.marketHeader .linksBody .loggedInHeader span .profileDropdown button.dropdown-item:hover {
+  background-color: #2d3436;
+  color: #fff;
+}
+.marketHeader .linksBody .loggedInHeader span p {
+
+}
+.marketHeader .linksBody .loggedInHeader span div.cartLogo {
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #343434;
+  height: 40px;
+  padding: 0 16px;
+  margin: 2px;
+}
+.marketHeader .linksBody .loggedInHeader span div.cartLogo svg,
+.marketHeader .linksBody .loggedInHeader span div.cartLogo img {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+.marketHeader .linksBody .loggedInHeader span div.cartLogo label {
+  color: #fff;
+  font-size: 9px;
+  border-radius: 100%;
+  padding: 1px 5px;
+  margin: 0;
+  position: absolute;
+  background-color: #e74c3c;
+}
+.marketHeader .linksBody .loggedInHeader span img.fbProfileImage{
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.marketHeader .linksBody label.slash:hover {
+  color: #fff;
+}
+
+.marketHeader .linksBody span:hover {
+  color: #2ecc71;
+}
+@media(max-width: 767px){
+  .marketHeader .linksBody .loggedInHeader span .profileDropdown button.profileDropdownButton {
+    background: Transparent;
+  }
+  .marketHeader .linksBody .loggedInHeader span div.cartLogo:nth-child(3) {
+    margin-top: 35px;
+  }
+  .marketHeader .linksBody .loggedInHeader span div.cartLogo {
+    background: Transparent;
+    margin-top: 15px;
+  }
+  .marketHeader .linksBody .loggedInHeader span div.cartLogo img,
+    .marketHeader .linksBody .loggedInHeader span div.cartLogo svg {
+    width: 30px;
+    height: 30px;
+  }
+  .marketHeader .linksBody .headerDisplayBody .cartLogo {
+    background-color: Transparent;
+  }
+  .marketHeader .linksBody .headerDisplayBody .cartLogo img,
+  .marketHeader .linksBody .headerDisplayBody .cartLogo svg {
+    width: 30px;
+    height: 30px;
+  }
+  .marketHeader .linksBody .loggedInHeader span .profileDropdown button.profileDropdownButton {
+    margin-left: 10px;
+  }
+  .marketHeader .linksBody .loggedInHeader span .profileDropdown button.profileDropdownButton img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.marketHeader .linksBody .cartLogo {
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #343434;
+  height: 40px;
+  padding: 0 16px;
+}
+.marketHeader .linksBody .cartLogo img,
+.marketHeader .linksBody .cartLogo svg {
+  width: 17px;
+  height: 17px;
+}
+
+.loginModalContent {
+  border-radius: 0 !important;
+
+}
+.loginModalContent  .modal-content {
+  border-radius: 0 !important;
+}

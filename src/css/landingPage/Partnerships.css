@@ -1,0 +1,19 @@
+.partnerships {
+  width: 100%;
+  margin: 0;
+}
+.partnerships .partnershipsContent {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.partnerships .partnershipsContent ul.eachPartners {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.partnerships .partnershipsContent ul.eachPartners li {
+  margin: 25px;
+}

@@ -1,0 +1,168 @@
+.login {
+  width: 100%;
+  margin: 0;
+}
+.login .loginContent {
+
+}
+.loginModalHeader {
+  background: #1F231F;
+  border-radius: 0 !important;
+  font-family: 'Rubik-Regular';
+  color: #fff;
+
+}
+.loginModalHeader {
+  border-bottom: 1px solid #1F231F !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginModalHeader button {
+  margin: 0 !important;
+  padding: 8px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.loginModalHeader button span {
+  color: #fff;
+}
+.loginModalHeader span p {
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #2ecc71;
+}
+
+.loginModalBody {
+  border-radius: 0;
+  margin: 0;
+  background: url('../../images/bg-LoginPopUp.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.loginModalBody .loginForm {
+  margin: 10px 25px;
+  padding: 22px 0 40px;
+  border-bottom: 2px solid #4A4A4A;
+}
+.loginModalBody .loginForm .loginAlert {
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+}
+.loginModalBody .loginForm .loginAlert button {
+  box-shadow: none;
+  outline: none;
+}
+.loginModalBody .loginForm label {
+  font-family: 'Rubik-Light';
+  color: #fff;
+  font-size: 15px;
+}
+.loginModalBody .loginForm label:nth-child(3) {
+  margin-top: 22px;
+}
+.loginModalBody .loginForm input {
+  font-family: 'Rubik-Light';
+  border-radius: 1px;
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+}
+.loginModalBody .loginForm h6 {
+  margin: 12px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Rubik-Light';
+  font-size: 13px;
+  color: #4DC378;
+  outline: none;
+  cursor: pointer;
+}
+.loginModalBody .loginForm h6:hover {
+  text-decoration: underline;
+}
+.loginModalBody .loginForm button.loginSubmit {
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  font-family: 'Rubik-Medium';
+  background: #57D284;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.loginModalBody .medias button.fbLoginButton {
+  font-family: 'Rubik-Medium';
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #3498db;
+  background-image: url('../../images/facebook-logo.svg');
+  background-repeat: no-repeat;
+  background-position: 8px;
+  background-size: 20px;
+  transition: 0.2s;
+}
+.loginModalBody .medias button.fbLoginButton:hover {
+  background-color: #2980b9;
+  transition: 0.2s;
+}
+@media(max-width: 360px){
+  .loginModalBody .loginForm {
+    margin: 10px 8px;
+  }
+  .loginModalBody .loginForm h6 {
+    display: flex;
+    justify-content: center;
+    float: none;
+  }
+  .loginModalBody .loginForm button {
+    width: 100%;
+  }
+  .loginModalBody .registerArea button {
+    width: 100% !important;
+  }
+}
+
+.loginModalBody .registerArea {
+  margin: 50px 0;
+}
+.loginModalBody .registerArea p {
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+}
+.loginModalBody .registerArea button {
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  font-family: 'Rubik-Medium';
+  background: #57D284;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+}

@@ -1,0 +1,440 @@
+.payment {
+  width: 100%;
+  margin: 0;
+}
+
+/* PAYMENT MODAL */
+.payment .paymentModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.payment .paymentModal.hidden {
+  display: none;
+}
+.payment .paymentModal .paymentModalBody {
+  position: fixed;
+  background: Transparent;
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 35px 30px 18px 30px;
+  border: 1px solid #353b48;
+  background: rgba(0, 0, 0, 0.4);
+}
+.payment .paymentModal .paymentModalBody h4 {
+  text-align: center;
+  color: #fff;
+}
+.payment .paymentModal .paymentModalBody .tickButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0;
+}
+.payment .paymentModal .paymentModalBody .tickButtons button {
+  width: 200px;
+  height: 50px;
+  margin: 0 8px;
+  background-color: Transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+.payment .paymentModal .paymentModalBody .tickButtons button.yes {
+  border: 2px solid #27ae60;
+  color: #27ae60;
+  font-family: 'Rubik-Medium';
+}
+.payment .paymentModal .paymentModalBody .tickButtons button.yes:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+.payment .paymentModal .paymentModalBody .tickButtons button.cancel {
+  border: 2px solid #c0392b;
+  color: #c0392b;
+  font-family: 'Rubik-Medium';
+}
+.payment .paymentModal .paymentModalBody .tickButtons button.cancel:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+/* START OF 'PAYMENT CONTENT' */
+
+.payment .paymentContent {
+  padding: 60px 0;
+}
+.payment .paymentContent .orders {
+  background-color: #fff;
+  padding: 28px 18px;
+  border: 1px solid #ecf0f1;
+  height: 100%;
+}
+.payment .paymentContent .orders .orderSummaryEmpty {
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+  color: #e74c3c;
+}
+.payment .paymentContent .orders h4 {
+  font-family: 'Rubik-Regular';
+  font-size: 20px;
+  color: #1C113D;
+}
+.payment .paymentContent .orders ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.payment .paymentContent .orders ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.payment .paymentContent .orders ul li p {
+  margin: 0;
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #9B9B9B;
+}
+.payment .paymentContent .orders span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment .paymentContent .orders span h5 {
+  font-family: 'Rubik-Medium';
+  font-size: 15px;
+  color: #1C113D;
+}
+.payment .paymentContent .orders button {
+  width: 100%;
+  margin-top: 14px;
+  font-family: 'Rubik-Medium';
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: #57D284;
+  color: #fff;
+  padding: 7px 0;
+}
+
+.payment .paymentContent .right {
+
+}
+.payment .paymentContent .right .shoppingCart {
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #ecf0f1;
+}
+.payment .paymentContent .right .shoppingCart label {
+  font-family: 'Rubik-Regular';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.payment .paymentContent .right .shoppingCart p {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #1C113D;
+  margin-top: 30px;
+}
+.payment .paymentContent .right .shoppingCart .backToMarket {
+  margin-top: 30px;
+}
+.payment .paymentContent .right .shoppingCart a {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  cursor: pointer;
+  color: #57D284;
+}
+.payment .paymentContent .right .templatesInCart {
+  margin-bottom: 18px;
+}
+@media(max-width: 575px){
+  .payment .paymentContent .right .templatesInCart {
+    margin-bottom: 18px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .payment .paymentContent .right .forms {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .payment .paymentContent .orders {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+.payment .paymentContent .right .templatesInCart label.checkAll {
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+  cursor: pointer;
+}
+.payment .paymentContent .right .templatesInCart .eachCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .templateCheckboxDiv {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .templateCheckboxDiv span.templateCheckbox {
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2ecc71;
+  background-color: #2ecc71;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .templateCheckboxDiv span.templateCheckbox img {
+  width: 12px;
+  height: 12px;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ecf0f1;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 20px;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .imageDiv {
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .imageDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc {
+  margin-left: 20px;
+  width: 75%;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .nameAndPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .nameAndPrice .price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #9B9B9B;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .nameAndPrice h5 {
+  font-family: 'Rubik-Bold';
+  font-size: 18px;
+  color: #1C113D;
+  margin: 0;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .nameAndPrice .price label {
+  margin: 0;
+  font-family: 'Rubik-Medium';
+  font-size: 30px;
+  color: #1C113D;
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc h6 {
+  font-family: 'Rubik-Regular';
+  font-size: 10px;
+  color: #9B9B9B;
+  margin: 0;
+  margin-top: -9px;
+}
+@media(max-width: 575px){
+  .payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .nameAndPrice .price  label {
+    font-size: 22px;
+  }
+  .payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc h6 {
+    margin-top: -5px;
+  }
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc p {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #1C113D;
+  margin-top: 8px;
+  width: 75%;
+}
+@media(max-width: 767px){
+  .payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc p {
+    font-size: 11px;
+  }
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .removeTemplate {
+  display: flex;
+  justify-content: flex-end;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .removeTemplate label {
+  font-family: 'Rubik-Regular';
+  font-size: 10px;
+  color: #9B9B9B;
+  cursor: pointer;
+}
+.payment .paymentContent .right .templatesInCart .eachCard .eachTemplate .desc .removeTemplate label:hover {
+  color: #e74c3c;
+}
+.payment .paymentContent .right .forms {
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #ecf0f1;
+}
+.payment .paymentContent .right .forms label {
+  font-family: 'Rubik-Regular';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.payment .paymentContent .right .forms .inputs {
+  padding: 0 30px;
+}
+@media(max-width: 575px){
+  .payment .paymentContent .right .forms .inputs {
+    padding: 0 5px;
+  }
+}
+.payment .paymentContent .right .forms .inputs .paymentAlert {
+  font-family: 'Rubik-Regular';
+  font-size: 13px;
+  border-radius: 2px;
+}
+.payment .paymentContent .right .forms .inputs .paymentAlert button {
+  outline: none;
+}
+.payment .paymentContent .right .forms .inputs input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #C9C9C9;
+  margin: 8px 0;
+  font-family: 'Rubik-Light';
+  font-size: 15px;
+  color: #000;
+  outline-color: #7f8c8d;
+}
+.payment .paymentContent .right .forms .inputs .formDropdown {
+  margin-top: 10px;
+  width: 100%;
+}
+.payment .paymentContent .right .forms .inputs .formDropdown button.formDropdownButton {
+  font-family: 'Rubik-Light';
+  font-size: 15px;
+  background-color: Transparent;
+  width: 100%;
+  border: 1px solid #C9C9C9;
+  border-radius: 0;
+  color: #9B9B9B;
+  display: flex;
+  padding: 10px 14px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: none;
+}
+.payment .paymentContent .right .forms .inputs .formDropdown .formDropdownMenu {
+  font-size: 15px;
+  width: 100%;
+}
+.payment .paymentContent .right .forms .inputs .formDropdown .formDropdownMenu .formDropdownItem {
+  font-family: 'Rubik-Light';
+  font-size: 15px;
+  border-radius: 0;
+}
+.payment .paymentContent .right .forms .inputs .formDropdown .formDropdownMenu .formDropdownItem:hover {
+  color: #fff;
+  background-color: gray;
+}
+
+.payment .paymentContent .right .forms .inputs input::placeholder {
+  color: #9B9B9B;
+}
+.payment .paymentContent .right .forms .terms {
+  margin-top: 5vh;
+  text-align: justify;
+  padding: 0 35px;
+}
+.payment .paymentContent .right .forms .terms p:nth-child(1) {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #1C113D;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.payment .paymentContent .right .forms .processPayment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 35px;
+}
+.payment .paymentContent .right .forms .processPayment button {
+  width: 100%;
+  font-family: 'Rubik-Medium';
+  font-size: 16px;
+  background: #57D284;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0;
+}
+@media(max-width: 575px){
+  .payment .paymentContent .right .forms .terms {
+    padding: 0 10px;
+  }
+  .payment .paymentContent .right .forms .processPayment {
+    padding: 0 10px;
+  }
+}
+.payment .paymentContent .right .forms .terms p:nth-child(2),
+.payment .paymentContent .right .forms .terms p:nth-child(3) {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #9B9B9B;
+  text-align: justify;
+}
+
+@media(max-width: 991px){
+  .payment .paymentContent .right {
+    margin: 15px 0;
+    padding: 0;
+  }
+}
+@media(max-width: 350px){
+  .payment .paymentContent .right .forms .inputs {
+    padding: 0;
+  }
+  .payment .paymentContent .right .forms .terms {
+    padding: 0;
+  }
+  .payment .paymentContent .right .forms .processPayment {
+    padding: 0;
+  }
+}

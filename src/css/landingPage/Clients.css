@@ -1,0 +1,102 @@
+.clients {
+  width: 100%;
+  margin: 0;
+}
+.clients .clientsContent {
+  padding: 35px 0;
+}
+.clients .clientsContent .titleBar {
+  text-align: center;
+  margin: 30px 0;
+}
+.clients .clientsContent .titleBar span {
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  color: #4DC378;
+}
+.clients .clientsContent .titleBar h2 {
+  font-family: 'Rubik-Bold';
+  font-size: 24px;
+  color: #1C113D;
+  margin: 8px 0;
+}
+
+.clients .clientsBody {
+  background: url('../../images/bg-ClientSection.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  width: 100% !important;
+  text-align: center;
+  padding: 20px 0;
+  min-height: 332px;
+}
+.clients .clientsBody img.clientsIcon {
+  position: relative;
+  z-index: 10;
+  bottom: 65px;
+}
+
+.clients .clientsBody .animate {
+  opacity: 1;
+
+}
+
+.clients .clientsBody .animate h2 {
+  font-family: 'Rubik-Bold';
+  font-size: 18px;
+  color: #fff;
+}
+.clients .clientsBody .animate h3 {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #4DC378;
+}
+.clients .clientsBody .container {
+
+}
+
+.clients .clientsBody .animate p {
+  font-family: 'Rubik-Regular';
+  font-size: 12px;
+  color: #fff;
+  line-height: 20px;
+  margin: 25px auto;
+  width: 75%;
+}
+.clients .clientsBody .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.clients .clientsBody .pagination span {
+  height: 7px;
+  width: 7px;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 0 4px;
+}
+.clients .clientsBody .pagination .activeState {
+  background-color: #27ae60;
+  width: 10px;
+  transition-duration: all 0.3s;
+  -moz-transition-duration: 0.3s; /* Firefox 4 */
+  -webkit-transition-duration: 0.3s; /* Safari and Chrome */
+  -o-transition-duration: 0.3s;
+  -webkit-transform: rotate(90deg) scale(1);
+    -webkit-transform-origin: center center;
+     -moz-transform: rotate(90deg) scale(1);
+    -moz-transform-origin:center center;
+     transform: rotate(90deg) scale(1);
+    transform-origin: center center;
+}
+
+
+@media(max-width: 767px){
+  .clients .clientsBody p {
+    width: 100%;
+  }
+}

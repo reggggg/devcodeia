@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="808px" height="124px" viewBox="0 0 808 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-PopUpBanner</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="283" y="341" width="800" height="116"></rect>
+        <filter x="-0.9%" y="-4.3%" width="101.8%" height="112.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Codeia---Password-Reset-Successful" transform="translate(-279.000000, -339.000000)" fill-rule="nonzero">
+            <g id="bg-PopUpBanner">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#1F231F" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

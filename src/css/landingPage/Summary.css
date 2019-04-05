@@ -1,0 +1,94 @@
+.summary {
+  width: 100%;
+  margin: 0;
+  background: #19171E;
+}
+.summary .summaryContent {
+  padding: 60px 0;
+}
+.summary .summaryContent .left{
+
+}
+.summary .summaryContent .left .titleBar {
+  color: #fff;
+}
+.summary .summaryContent .left .titleBar img {
+  width: 90px;
+  margin: 8px 0;
+}
+.summary .summaryContent .left .titleBar p {
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  line-height: 18px;
+  width: 75%;
+}
+.summary .summaryContent .left .media {
+  margin-top: 35px;
+  color: #fff;
+}
+.summary .summaryContent .left .media h3 {
+  font-family: 'Rubik-Medium';
+  font-size: 16px;
+  color: #fff;
+}
+.summary .summaryContent .left .media ul {
+  padding: 0;
+  margin: 0;
+}
+.summary .summaryContent .left .media li.eachMedia {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.summary .summaryContent .left .media li.eachMedia img {
+  margin: 0;
+  margin-right: 15px;
+}
+.summary .summaryContent .left .media li.eachMedia h6 {
+  margin: 0;
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+}
+
+.summary .summaryContent .right {
+  margin-top: 16px;
+}
+.summary .summaryContent .right .redirects {
+  color: #fff;
+}
+.summary .summaryContent .right .redirects .summaryLinks h4 ,
+.summary .summaryContent .right .redirects .summaryServices h4 ,
+.summary .summaryContent .right .redirects .summaryGallery h4 {
+  font-family: 'Rubik-Bold';
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.summary .summaryContent .right .redirects .summaryLinks div.eachLinks,
+.summary .summaryContent .right .redirects .summaryServices div.eachServices {
+  font-size: 12px;
+  margin: 12px 0;
+}
+.summary .summaryContent .right .redirects .summaryLinks div.eachLinks label,
+.summary .summaryContent .right .redirects .summaryServices div.eachServices label {
+  font-family: 'Rubik-Light';
+  font-size: 12px;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.summary .summaryContent .right .redirects .summaryLinks div.eachLinks label:hover {
+  text-decoration: underline;
+}
+.summary .summaryContent .right .redirects .summaryLinks div.eachServices label:hover {
+  text-decoration: underline;
+}
+
+.summary .summaryContent .right .redirects .summaryGallery {
+
+}
+.summary .summaryContent .right .redirects .summaryGallery .eachImage {
+  flex-flow: row wrap;
+  margin: 0 2.5px 5px;
+}

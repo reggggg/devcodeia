@@ -1,0 +1,272 @@
+.itemDetails {
+  width: 100%;
+  margin: 0;
+}
+.itemDetails .itemDetailsContent {
+  padding: 70px 0;
+}
+.itemDetails .itemDetailsContent .left {
+  background-color: #fff;
+  padding: 30px 20px;
+  border: 1px solid #ecf0f1;
+  height: 100%;
+}
+.itemDetails .itemDetailsContent .left span.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemDetails .itemDetailsContent .left span.pricing h6 {
+  font-family: 'Rubik-Medium';
+  margin: 0;
+  font-size: 14px;
+  color: #9B9B9B;
+}
+.itemDetails .itemDetailsContent .left span.pricing h5 {
+  font-family: 'Rubik-Medium';
+  margin: 0;
+  font-size: 27px;
+  margin-bottom: 7px;
+  color: #1C113D;
+}
+.itemDetails .itemDetailsContent .left p {
+  font-family: 'Rubik-Light';
+  font-style: italic;
+  text-align: center;
+  font-size: 12px;
+  color: #9B9B9B;
+}
+.itemDetails .itemDetailsContent .left .buyNowDiv {
+  text-align: center;
+}
+.itemDetails .itemDetailsContent .left .buyNowDiv button {
+  font-family: 'Rubik-Medium';
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background: #57D284;
+}
+.itemDetails .itemDetailsContent .left span.cardPurchase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  flex-flow: row wrap;
+}
+.itemDetails .itemDetailsContent .left span.cardPurchase img {
+  margin: 5px 8px;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+.itemDetails .itemDetailsContent .left span.cardPurchase img:hover {
+  border: 1px solid gray;
+}
+.itemDetails .itemDetailsContent .right {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media(max-width: 767px){
+  .itemDetails .itemDetailsContent .right {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 15px;
+  }
+}
+.itemDetails .itemDetailsContent .right .itemDetails {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ecf0f1;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .placeholder {
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 12px 0;
+  background-color: #eee;
+}
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -350px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+.itemDetails .itemDetailsContent .right .itemDetails .placeholder .animated-background {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 12px;
+  position: relative;
+}
+.itemDetails .itemDetailsContent .right .itemDetails label {
+  font-family: 'Rubik-Regular';
+  font-size: 30px;
+  color: #1C113D;
+  border-bottom: 2px solid #57D284;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem {
+  padding: 0 30px;
+}
+
+/* confirmation modal animated  */
+
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0);
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert .addToCartAlertBody {
+  position: fixed;
+  background: Transparent;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 35px 25px 18px 25px;
+  border: 1px solid #353b48;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert .addToCartAlertBody svg {
+  color: #2ecc71;
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+@media(max-width: 650px){
+  .itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert .addToCartAlertBody {
+    width: 90%;
+  }
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert .addToCartAlertBody h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert .addToCartAlertBody .tickButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert .addToCartAlertBody .tickButtons button {
+  width: 165px;
+  height: 35px;
+  margin: 0 8px;
+  font-size: 14px;
+  background-color: Transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .addToCartAlert .addToCartAlertBody .tickButtons button.cancel {
+  border: 2px solid #c0392b;
+  background-color: #c0392b;
+  color: #fff;
+  font-family: 'Rubik-Medium';
+}
+
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .alert-exit {
+  opacity: 1;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+/* end of confirmation modal animated  */
+
+
+@media(max-width: 450px){
+  .itemDetails .itemDetailsContent .right .itemDetails .eachItem {
+    padding: 0 8px;
+  }
+}
+
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem img{
+  width: 100%;
+  margin: 12px auto;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .buttonContainer button {
+  cursor: pointer;
+  font-family: 'Rubik-Bold';
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 6px;
+  width: 154px;
+  height: 43px;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .buttonContainer button.buttonPreview {
+  background-color: Transparent;
+  border: 3px solid #57D284;
+  color: #57D284;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem .buttonContainer button.buttonBuyNow {
+  border: 3px solid #57D284;
+  background-color: #57D284;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem p {
+  font-family: 'Rubik-Light';
+  font-size: 13px;
+  color: #1C113D;
+  text-align: justify;
+  margin: 40px 0;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem h6 {
+  font-family: 'Rubik-Medium';
+  font-size: 12px;
+  color: #57D284;
+  margin-bottom: 20px;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem ul {
+  list-style-type: none;
+}
+.itemDetails .itemDetailsContent .right .itemDetails .eachItem ul li {
+  font-family: 'Rubik-Light';
+  font-size: 13px;
+  color: #000;
+  margin: 8px 0;
+}
+@media(max-width: 452px){
+  .itemDetails .itemDetailsContent .right .itemDetails .eachItem .buttonContainer {
+    flex-flow: row wrap;
+  }
+  .itemDetails .itemDetailsContent .right .itemDetails .eachItem .buttonContainer button {
+    width: 100%;
+  }
+}
